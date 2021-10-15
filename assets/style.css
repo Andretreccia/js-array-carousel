@@ -9,14 +9,6 @@
     margin-top: 3rem;
 }
 
-.debug .image{
-    background-color: cornflowerblue;
-    border: 1px solid black;
-    
-}
-
-
-
 
 /* Utilities */
 .flex{
@@ -26,12 +18,11 @@
 .col_10{
     width: calc((100% / 12) * 10);
     background-color: chartreuse;
-    height: 100%;
 }
 .col_2{
     width: calc((100% / 12) * 2);
     background-color: chocolate;
-    height: 100%;
+    
 }
 /* container */
 .container{
@@ -39,16 +30,10 @@
     height: 500px;
     width: 1200px;
 }
-.row{
-    height: 100%;
-}
+
 .gallery{
     flex-direction: column;
     position: relative;
-}
-.image{
-    height: calc((100% / 5) *1);
-    width: 100%;
 }
 .btn_top{
     position: absolute;
@@ -60,5 +45,4 @@
     position: absolute;
     bottom: 0;
     right: 50%;
-
 }

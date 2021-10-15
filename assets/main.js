@@ -23,9 +23,17 @@ const text = [
     'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
 ]
 
-//Inserimento immagini
-    //Selezionare gli elementi contenuti negli array 
+//Seleziona le colonne e crea due costanti
+const containerLeft = document.getElementById("imgLeft")
+const containerRight = document.getElementById("imgRight")
+//Crea una variabile per le immagini della colonna di destra
+let imageRight = ``;
+//Inserisci tutte le immagini contenute nell array
+for (let i = 0; i < items.length; i++) {
 
-    // Stampare su schermo le immagini inserendole tramite la loro variabile
+    imageRight += `<img src= "${items[i]}" alt="">`;
+    console.log(imageRight)
 
-//Al click di un pulsante far visualizzare una determinata immagine (utilizzando una variabile flag e dando a img display: none?)
+}
+
+containerRight.innerHTML = imageRight
