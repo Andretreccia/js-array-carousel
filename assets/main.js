@@ -60,7 +60,10 @@ const btn_top = document.querySelector(".btn_top")
 const btn_bottom = document.querySelector(".btn_bottom")
 
 btn_bottom.addEventListener('click', function () {
-    ++indice
+    if (indice < items.length - 1) {
+        ++indice
+    }
+
     console.log(indice)
     document.querySelector(".selected.imgSelectedBig").classList.remove("imgSelectedBig")
     document.getElementsByClassName("selected")[indice].classList.add("imgSelectedBig")
@@ -69,7 +72,9 @@ btn_bottom.addEventListener('click', function () {
     document.getElementsByClassName("sideImage")[indice].classList.add("imgSelectedSmall")
 })
 btn_top.addEventListener('click', function () {
-    --indice
+    if (indice > 0) {
+        --indice
+    }
     console.log(indice)
     document.querySelector(".selected.imgSelectedBig").classList.remove("imgSelectedBig")
     document.getElementsByClassName("selected")[indice].classList.add("imgSelectedBig")

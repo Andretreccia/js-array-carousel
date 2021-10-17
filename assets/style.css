@@ -17,19 +17,17 @@
 
 /* container */
 .container{
-    margin: auto;
-    height: 500px;  
+    margin: auto; 
     display: flex;
 }
 .containerRight{
-    height: 500px;
     display: flex;
     flex-direction: column;
-    height: 100px;
+    height: 86px;
     position: relative;
 }
 .containerLeft{
-    height: 500px;
+    height: 430px;
 }
 .matriosca{
     position: relative;
@@ -37,16 +35,19 @@
 /* immagine grande */
 
 .selected{
-    height: 100%;   
+    height: 100%;
+    width: 1000px;   
     background: darkkhaki;
     display: none;
+    position: relative;
+    overflow: hidden;
 }
 .imgSelectedBig{
     display: block;
 }
 .bigImage{
-    height: 100%;
-    max-width: 1000px;
+     width: 100%;
+     object-fit: cover;
 }
 .etichetta{
         position: absolute;
@@ -78,7 +79,7 @@
 .btn_top{
     position: absolute;
     top: 0;
-    right: 47%;
+    right: 42%;
     padding: 0.5rem;
     z-index: 324234;
 
@@ -86,7 +87,7 @@
 .btn_bottom{
     position: absolute;
     bottom: 0;
-    right: 47%;
+    right: 42%;
     padding: 0.5rem;
     z-index: 34252;
 }
