@@ -8,34 +8,34 @@
 .debug .container{   
     margin-top: 3rem;
 }
-
-
 /* Utilities */
 .flex{
     display: flex;
 }
 
-.col_10{
-    width: calc((100% / 12) * 10);
-    background-color: chartreuse;
-}
-.col_2{
-    width: calc((100% / 12) * 2);
-    background-color: chocolate;
-    
-}
 /* container */
 .container{
     margin: auto;
-    height: 500px;
-    width: 1200px;
+    height: 500px;  
 }
-
-.gallery{
+.selected{
+        height: 100%;   
+    background: darkkhaki;
+}
+.imageList{
+    display: flex;
     flex-direction: column;
-    position: relative;
+    height: 100px;
 }
-.btn_top{
+.bigImage{
+    height: 100%;
+    max-width: 1000px;
+}
+.sideImage{
+  max-height: 100%;
+  max-width: 100%;
+}
+/* .btn_top{
     position: absolute;
     top: 0;
     right: 50%;
@@ -45,4 +45,5 @@
     position: absolute;
     bottom: 0;
     right: 50%;
-}
+} */
+

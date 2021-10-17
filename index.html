@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=scrf, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>js-array-casousel</title>
-</head>
-<body class="debug">
-    <div class="container">
-       <div class="row flex">
-           <div id="imgLeft" class="col_10"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=scrf, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/style.css">
+        <title>js-array-casousel</title>
+    </head>
+    <body class="flex debug">
+        <!-- Contenitore -->
+        <div class="container flex">
+            <!-- <button class="btn_top">su</button>
+               <button class="btn_bottom">giu</button> -->
+            <div class="selected">
+                <img class="bigImage" src="./img/02.jpg" alt="">
+            </div>
 
-           <div id="imgRight" class="col_2 flex gallery">
-               <button class="btn_top">su</button>
-               <button class="btn_bottom">giu</button>
-              
-           </div>
-       </div>
-    
-    </div>
-    <script src="./assets/main.js"></script>
-</body>
+            <div class="imageList">
+                <img src="./img/01.jpg" alt="" class="sideImage">
+                <img src="./img/02.jpg" alt="" class="sideImage">
+                <img src="./img/03.jpg" alt="" class="sideImage">
+                <img src="./img/04.jpg" alt="" class="sideImage">
+                <img src="./img/05.jpg" alt="" class="sideImage">
+            </div>
+        </div>
+        <script src="./assets/main.js"></script>
+    </body>
 </html>

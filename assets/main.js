@@ -24,16 +24,27 @@ const text = [
 ]
 
 //Seleziona le colonne e crea due costanti
-const containerLeft = document.getElementById("imgLeft")
+/* const containerLeft = document.getElementById("imgLeft")
 const containerRight = document.getElementById("imgRight")
 //Crea una variabile per le immagini della colonna di destra
 let imageRight = ``;
+// di sinistra
+let imageLeft = ``;
 //Inserisci tutte le immagini contenute nell array
+let ordine = 3
 for (let i = 0; i < items.length; i++) {
 
-    imageRight += `<img src= "${items[i]}" alt="">`;
-    console.log(imageRight)
+    imageRight += `<div id="smallImage" class"selected">
+                     <img src= "${items[i]}" alt="" >
+                    </div>`;
+
+
+    imageLeft = `<div id="bigImage" class="selected">
+                     <img src= "${items[1]}" alt="" >
+                    </div>`;
+
 
 }
-
 containerRight.innerHTML = imageRight
+containerLeft.innerHTML = imageLeft
+// */
