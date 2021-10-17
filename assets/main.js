@@ -23,28 +23,23 @@ const text = [
     'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
 ]
 
-//Seleziona le colonne e crea due costanti
-/* const containerLeft = document.getElementById("imgLeft")
-const containerRight = document.getElementById("imgRight")
-//Crea una variabile per le immagini della colonna di destra
+//costante per selezionare il container
+const container = document.querySelector(".container")
+//Due variabili a cui assegnare un valore nel ciclo
 let imageRight = ``;
-// di sinistra
 let imageLeft = ``;
 //Inserisci tutte le immagini contenute nell array
-let ordine = 3
 for (let i = 0; i < items.length; i++) {
 
-    imageRight += `<div id="smallImage" class"selected">
-                     <img src= "${items[i]}" alt="" >
-                    </div>`;
+    imageRight += `<div class="imageList">
+                <img src="./img/01.jpg" alt="" class="sideImage">
+                </div>`;
 
 
-    imageLeft = `<div id="bigImage" class="selected">
-                     <img src= "${items[1]}" alt="" >
-                    </div>`;
+    imageLeft += `<div class="selected">
+                <img class="bigImage" src="./img/02.jpg" alt="">
+            </div>`;
 
 
 }
-containerRight.innerHTML = imageRight
-containerLeft.innerHTML = imageLeft
-// */
+container.innerHTML = imageLeft
