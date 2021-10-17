@@ -8,7 +8,9 @@
 .debug .container{   
     margin-top: 3rem;
 }
+
 /* Utilities */
+
 .flex{
     display: flex;
 }
@@ -25,29 +27,51 @@
     height: 100px;
 }
 .containerLeft{
+    position: relative;
     height: 500px;
+}
+
+/* immagine grande */
+
+.imgSelectedBig{
+    display: block;
 }
 .selected{
         height: 100%;   
     background: darkkhaki;
-    display: none;
-}
-.imgSelected{
     display: block;
 }
+.bigImage{
+    height: 100%;
+    max-width: 1000px;
+}
+.etichetta{
+        position: absolute;
+    color: white;
+    right: 40px;
+    bottom: 26px;
+    text-align: end;
+}
+
+/* lista immagini */
 /* .imageList{
     display: flex;
     flex-direction: column;
     height: 100px;
 } */
-.bigImage{
-    height: 100%;
-    max-width: 1000px;
+.sideImage{
+    opacity: 0.5;
+}
+.imgSelectedSmall{
+    opacity: 1;
 }
 .sideImage{
   max-height: 100%;
   max-width: 100%;
 }
+
+/* bottoni */
+
 /* .btn_top{
     position: absolute;
     top: 0;

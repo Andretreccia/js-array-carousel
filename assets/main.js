@@ -24,7 +24,7 @@ const text = [
 ]
 
 //costante per selezionare il container
-const containerLeft = document.querySelector(".containerLeft")
+/* const containerLeft = document.querySelector(".containerLeft") */
 const containerRight = document.querySelector(".containerRight")
 //Due variabili a cui assegnare un valore nel ciclo
 let imageRight = ``;
@@ -33,20 +33,21 @@ let imageLeft = ``;
 for (let i = 0; i < items.length; i++) {
 
     imageRight += `
-                <img src="./img/01.jpg" alt="" class="sideImage">
+                <img src="${items[i]}" alt="" class="sideImage">
                `;
 
 
-    imageLeft += `<div class="selected">
+    /* imageLeft += `<div class="selected">
                 <img class="bigImage" src="${items[i]}" alt="">
-            </div>`;
+            </div>`; */
 
 
 }
 //inserisci le immagini nel html
-containerLeft.innerHTML = imageLeft
+/* containerLeft.innerHTML = imageLeft */
 containerRight.innerHTML = imageRight
 //definire una variabile per selezionare l indice
-let indice = 3;
+let indice = 0;
 //aggiungere una classe all elemento quando è selezionato
-document.getElementsByClassName("selected")[indice].classList.add("imgSelected");
+/* document.getElementsByClassName("selected")[indice].classList.add("imgSelectedBig"); */
+document.getElementsByClassName("sideImage")[indice].classList.add("imgSelectedSmall");
