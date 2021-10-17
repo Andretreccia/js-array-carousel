@@ -18,15 +18,24 @@
     margin: auto;
     height: 500px;  
 }
-.selected{
-        height: 100%;   
-    background: darkkhaki;
-}
-.imageList{
+.containerRight{
+    height: 500px;
     display: flex;
     flex-direction: column;
     height: 100px;
 }
+.containerLeft{
+    height: 500px;
+}
+.selected{
+        height: 100%;   
+    background: darkkhaki;
+}
+/* .imageList{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+} */
 .bigImage{
     height: 100%;
     max-width: 1000px;

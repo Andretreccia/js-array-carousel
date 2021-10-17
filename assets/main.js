@@ -24,16 +24,17 @@ const text = [
 ]
 
 //costante per selezionare il container
-const container = document.querySelector(".container")
+const containerLeft = document.querySelector(".containerLeft")
+const containerRight = document.querySelector(".containerRight")
 //Due variabili a cui assegnare un valore nel ciclo
 let imageRight = ``;
 let imageLeft = ``;
 //Inserisci tutte le immagini contenute nell array
 for (let i = 0; i < items.length; i++) {
 
-    imageRight += `<div class="imageList">
+    imageRight += `
                 <img src="./img/01.jpg" alt="" class="sideImage">
-                </div>`;
+               `;
 
 
     imageLeft += `<div class="selected">
@@ -42,4 +43,7 @@ for (let i = 0; i < items.length; i++) {
 
 
 }
-container.innerHTML = imageLeft
+
+containerLeft.innerHTML = imageLeft
+
+containerRight.innerHTML = imageRight
