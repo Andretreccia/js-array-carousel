@@ -19,26 +19,29 @@
 .container{
     margin: auto;
     height: 500px;  
+    display: flex;
 }
 .containerRight{
     height: 500px;
     display: flex;
     flex-direction: column;
     height: 100px;
+    position: relative;
 }
 .containerLeft{
-    position: relative;
     height: 500px;
 }
-
+.matriosca{
+    position: relative;
+}
 /* immagine grande */
 
-.imgSelectedBig{
-    display: block;
-}
 .selected{
-        height: 100%;   
+    height: 100%;   
     background: darkkhaki;
+    display: none;
+}
+.imgSelectedBig{
     display: block;
 }
 .bigImage{
@@ -54,11 +57,11 @@
 }
 
 /* lista immagini */
-/* .imageList{
+.imageList{
     display: flex;
     flex-direction: column;
     height: 100px;
-} */
+}
 .sideImage{
     opacity: 0.5;
 }
@@ -72,15 +75,19 @@
 
 /* bottoni */
 
-/* .btn_top{
+.btn_top{
     position: absolute;
     top: 0;
-    right: 50%;
+    right: 47%;
+    padding: 0.5rem;
+    z-index: 324234;
 
 }
 .btn_bottom{
     position: absolute;
     bottom: 0;
-    right: 50%;
-} */
+    right: 47%;
+    padding: 0.5rem;
+    z-index: 34252;
+}
 
