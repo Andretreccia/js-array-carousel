@@ -68,6 +68,7 @@
 }
 .imgSelectedSmall{
     opacity: 1;
+    border: 3px solid white;
 }
 .sideImage{
   max-height: 100%;
