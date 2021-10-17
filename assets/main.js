@@ -29,7 +29,7 @@ const containerRight = document.querySelector(".containerRight")
 //Due variabili a cui assegnare un valore nel ciclo
 let imageRight = ``;
 let imageLeft = ``;
-//Inserisci tutte le immagini contenute nell array
+//ciclo per stampare tutta la lista dell array
 for (let i = 0; i < items.length; i++) {
 
     imageRight += `
@@ -38,12 +38,15 @@ for (let i = 0; i < items.length; i++) {
 
 
     imageLeft += `<div class="selected">
-                <img class="bigImage" src="./img/02.jpg" alt="">
+                <img class="bigImage" src="${items[i]}" alt="">
             </div>`;
 
 
 }
-
+//inserisci le immagini nel html
 containerLeft.innerHTML = imageLeft
-
 containerRight.innerHTML = imageRight
+//definire una variabile per selezionare l indice
+let indice = 3;
+//aggiungere una classe all elemento quando è selezionato
+document.getElementsByClassName("selected")[indice].classList.add("imgSelected");

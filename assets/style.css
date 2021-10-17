@@ -30,6 +30,10 @@
 .selected{
         height: 100%;   
     background: darkkhaki;
+    display: none;
+}
+.imgSelected{
+    display: block;
 }
 /* .imageList{
     display: flex;
